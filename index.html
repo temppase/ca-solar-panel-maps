@@ -10,8 +10,8 @@
 <body>
 
 <div class="p-5 bg-primary text-white text-center">
-  <h1>Test</h1>
-  <p>Select what you want to see from the menu</p> 
+  <h1>California solar panel data</h1>
+  <p>School project</p> 
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -33,7 +33,24 @@
   </div>
 </nav>
 
-
+<div class="p-5 bg-secondary text-black text-center">
+  <h3>Some problems that came up</h3>
+  <p>In order to get the data on the map, you had to use fips codes that had to be merged with the data.</p> 
+  <ul>
+    <li>
+      There was more fips than zip codes because one zip reagion is formed many fips.
+    </li>
+    <li>
+      When mergin fips codes to the data frame it was creating extra rows because every unique zip have so many rows as many fips it have. 
+    </li>
+    <li>
+      There was also GeoJSON data that uses a zip instead a fips but it wasn't contain ID what plotly's map need.
+    </li>
+    <li>
+      I couldn't also find a way how to make animation cumulative in a way that system size cumulates correctly binded whit fips and years. 
+    </li>
+  </ul>
+</div>
 
 </body>
 </html>
